@@ -563,6 +563,9 @@ code {
   border-bottom: solid .2px #000;
   padding: 0 10px 0 10px;
 }
+.main-five a.router-link-exact-active {
+  color: #000;
+}
 
 @media only screen and (max-width: 369px) {}
 </style>  

@@ -500,5 +500,9 @@ a.RouterLink-exact-active {
   color: #000;
 }
 
+.main-five a.router-link-exact-active {
+  color: #000;
+}
+
 @media only screen and (max-width: 369px) {}
 </style>

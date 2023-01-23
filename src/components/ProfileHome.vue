@@ -1,6 +1,7 @@
 <template>
   <div class="homeAnimation">
-    <div class='main-two'>
+    <!-- 
+      <div class='main-two'>
       <code v-if="Math.random() > 0.5" >
         <i class="fa-solid fa-quote-left"></i> A felicidade não é algo que simplesmente acontece conosco. <br>É algo que nós fazemos acontecer.
         <br>
@@ -21,7 +22,7 @@
         Mihaly Csikszentmihalyi      
       </code>
 
-    </div>
+    </div> -->
 
     <div class='main-tree'>
       <div>
@@ -246,7 +247,7 @@ code {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin: -10px 0 -20px 0;
+  margin: -40px 0 -20px 0;
   color: #095d62;
   overflow-x:auto;
 }
@@ -280,7 +281,7 @@ code {
 }
 
 .main-four-card {
-  height: 180px;
+  height: 160px;
   width: 180px;
   display: flex;
   justify-content: flex-start;
@@ -316,7 +317,7 @@ code {
 
 .main-four-card p {
   margin: 0 0 0 10px;
-  font-size: .8em;
+  font-size: .7em;
 }
 
 .main-five {

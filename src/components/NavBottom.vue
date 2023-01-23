@@ -14,7 +14,7 @@ methods: {
     <div class="nav-bottom"> 
      <RouterLink to='/professor' @click.native="scrollToTop()">
       <i class="fa-solid fa-user"></i>
-      <h5>Professor</h5>
+      <h5>PROFESSOR</h5>
     </RouterLink>
     <RouterLink to='/blog' @click.native="scrollToTop()">
       <i class="fa-solid fa-blog"></i>
@@ -80,7 +80,7 @@ i {
   text-shadow: 0px 0px .5px black;
 }
 
-.nav-bottom a.RouterLink-exact-active {
+.nav-bottom a.router-link-exact-active {
   color: #000;
 }
 </style>

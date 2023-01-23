@@ -573,7 +573,7 @@ code {
   }
   
 .main-two i {
-  font-size: 30px;
+  font-size: 25px;
   margin: 2px 0;
   transition: all .4s linear;
 }
@@ -598,17 +598,17 @@ code {
 .main-two a {
   border: solid .1px #aaa;
   margin: 3px 0 0 3px;
-  height: 85px;
-  width: 85px;
+  height: 55px;
+  width: 55px;
   color: #555;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size:1em;
+  font-size: .7em;
   transition: all .4s linear;
-  margin: 0px 10px 20px 10px;
+  margin: 0px 7px 20px 7px;
   border-radius: 15% 15% 15% 15%;
 }
 .main-two a:hover {

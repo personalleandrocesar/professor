@@ -447,7 +447,7 @@
 
 <style scoped>
 svg {
-  margin: -50px auto -100px auto;
+  margin: -60px auto -100px auto;
 }
 .canva path {
   fill: #095d62;

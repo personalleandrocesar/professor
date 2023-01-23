@@ -116,7 +116,7 @@ export default {
 </template>
 
 <style scoped>
-  body {
+body {
   background: #fff;
   font-family: 'Philosopher', sans-serif;
   color: #aaa;
@@ -492,8 +492,11 @@ a.RouterLink-exact-active {
     color: #000;
 }
 
+.main-five a.router-link-exact-active {
+  color: #000;
+}
+
 @media only screen and (max-width: 369px) {
 
   }
-
 </style>
