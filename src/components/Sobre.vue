@@ -879,7 +879,7 @@ i:nth-child(15) {
 }
 
 .dateYearHover {
-  color: #000;
+  color: #095D62;
 }
 
 @media only screen and (max-width: 369px) {}

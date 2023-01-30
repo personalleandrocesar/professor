@@ -80,10 +80,10 @@ i {
 }
 
 .nav-bottom a:hover {
-  text-shadow: 0px 0px .5px black;
+  text-shadow: 0px 0px .5px #fadb41;
 }
 
 .nav-bottom a.router-link-exact-active {
-  color: #000;
+  color: #095D62;
 }
 </style>

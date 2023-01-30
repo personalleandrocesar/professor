@@ -358,6 +358,10 @@ i:nth-child(15) {
   color: #aaa;
 }
 
+.main-five-card a:hover {
+  color: #fadb41;
+}
+
 .main-five-card span {
   position: relative;
   top: -6px;

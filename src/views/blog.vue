@@ -351,6 +351,9 @@ code {
   border-radius: 3% 3% 3% 3%;
   color: #aaa;
 }
+.main-five-card a:hover {
+  color: #fadb41;
+}
 
 .main-five-card span {
   position: relative;

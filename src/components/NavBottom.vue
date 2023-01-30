@@ -81,6 +81,6 @@ i {
 }
 
 .nav-bottom a.router-link-exact-active {
-  color: #000;
+  color: #095D62;
 }
 </style>
