@@ -15,7 +15,7 @@ import NavBottomTree from '../components/NavBottomTree.vue'
       
       <div class='main-tree'>
         <div>
-          <h5><i class="fa-solid fa-arrows-spin"></i> Serviços</h5>
+          <h5><i class="fa-solid fa-ranking-star"></i> Serviços</h5>
         </div>
       </div>
 

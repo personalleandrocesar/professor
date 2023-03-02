@@ -12,9 +12,9 @@ methods: {
 <template>
   <div>
     <div class="nav-bottom"> 
-     <RouterLink to='/professor' @click.native="scrollToTop()">
-      <i class="fa-solid fa-user"></i>
-      <h5>PROFESSOR</h5>
+     <RouterLink to='/servicos' @click.native="scrollToTop()">
+      <i class="fa-solid fa-ranking-star"></i>
+        <h5>SERVIÇOS</h5>
     </RouterLink>
     <RouterLink to='/blog' @click.native="scrollToTop()">
       <i class="fa-solid fa-blog"></i>

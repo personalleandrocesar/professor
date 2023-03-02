@@ -1,430 +1,208 @@
-<template>
-    <div>
-    <NavTwo/>
-    <NavBottomTwo/>
+<script setup>
+import NavTwo from '../components/NavTwo.vue'
+import NavBottomTree from '../components/NavBottomTree.vue'
+</script>
 
-    <div class='main-four'>
+
+<template>
+  <div>
+    <NavTwo />
+    <div class='anima'>
+      <div class='profile'>
+        <img src='/img/myFotoTwo.jpg' alt=''>
+        <div>
+          <h1>Personal Leandro Cesar</h1>
+          <h4><i class="fa-solid fa-user-graduate"></i> Professor de Educação Física</h4>
+        </div>
+      </div>
+
+      <div class='main-one'>
+        <a href="https://instagram.com/personalleandrocesar">
+          <i class="fa-brands fa-instagram-square"></i> Instagram/personalleandrocesar
+        </a>
+
+        <a>
+          <i class="fa-solid fa-graduation-cap"></i> Graduação em Educação Física
+        </a>
+        <a>
+          <i class="fa-regular fa-id-card"></i> CREF: 029260-G/RJ
+        </a>
+
+        <a href="http://lattes.cnpq.br/3830820363501969">
+          <i class="fai fa-solid fa-link"></i> Currículo Lattes
+        </a>
+      </div>
+
+      <div class='divider'></div>
+
+      <div class='main-two'>
+        <code>
+              <b>#vemtreinarcomigo</b>
+              <br>
+              Bora treinar junto! 
+            </code>
+        <a
+          href='https://api.whatsapp.com/send?phone=5521971305858%20&text=Ol%C3%A1%20Leandro%20Cesar,%20fiquei%20interessado(a)%20na%20sua%20Consultoria%20e%20nos%20seus%20Servi%C3%A7os,%20me%20chamo%20'>
+          <i class="fa-brands fa-whatsapp"></i> Marcar Horário
+        </a>
+      </div>
+
+      <div class='divider'></div>
+      <div class='main-tree'>
+        <div>
+          <h5><i class="fa-solid fa-ranking-star"></i> Serviços</h5>
+        </div>
+      </div>
+
+      <div class='main-four'>
 
         <h5>
-            Clique em um dos serviços abaixo! 👇
+          Clique em um dos serviços abaixo! 👇
         </h5>
-     </div>   
-    <div class='main-five'>
-    
-        <div @click="personal" class='main-five-card'>
+      </div>
+      <div class='main-five'>
+
+        <RouterLink to='/personal'>
+
+          <div class='main-five-card'>
             <div>
-                <img src='/img/myFotoTwo.jpg' alt='' class='mini-profile'> 
-                <p><i class="fa-solid fa-people-arrows-left-right"></i> Serviço presencial</p>
+              <img src='/img/personal-one.png' alt='' class='mini-profile'>
+              <p><i class="fa-solid fa-people-arrows-left-right"></i> Serviço presencial</p>
             </div>
             <div>
-                <h4>Personal Trainer</h4>
-                <h5>R$ 50,00 hora/aula</h5>
-                <p>Serviço de Personal trainer, para treinamento personalizados em academias; </p>
+              <h4>Personal Trainer</h4>
+              <h5>R$ 50,00 hora/aula</h5>
+              <p>Serviço de treinamento particular, individualizado em academias; </p>
             </div>
-        </div>
-        <div @click="personal" class='main-five-card'>
+          </div>
+        </RouterLink>
+        <RouterLink to='/consultoria'>
+
+          <div class='main-five-card'>
             <div>
-                <img src='/img/myFotoTwo.jpg' alt='' class='mini-profile'> 
-                <p><i class="fa-solid fa-camera"></i> Serviço Digital</p>
-            </div>
-            <div>
-                <h4>Consultoria on-line</h4>
-                <h5>R$ 50,00</h5>
-                <p>Serviço de Personal trainer, para treinamento personalizados em academias; </p>
-            </div>
-        </div>
-        <div @click="personal" class='main-five-card'>
-            <div>
-                <img src='/img/myFotoTwo.jpg' alt='' class='mini-profile'> 
-                <p><i class="fa-solid fa-people-arrows-left-right"></i> Serviço presencial</p>
+              <img src='/img/myFotoTwo.jpg' alt='' class='mini-profile'>
+              <p>Serviços:<br> <i class="fa-solid fa-people-arrows-left-right"></i> presencial <br>+<br><i
+                  class="fa-solid fa-mobile-screen-button"></i> Digital </p>
             </div>
             <div>
-                <h4>Avaliação Fisica</h4>
-                <h5>R$ 50,00</h5>
-                <p>Serviço de Personal trainer, para treinamento personalizados em academias; </p>
+              <h4>Consultoria Online +<br> Avaliação Física (Gratuita)</h4>
+              <h5>A partir de R$ 40,00 mensais</h5>
+              <p>Séries individuais em aplicativo para treinamento em academias + avaliação física presencial gratuita;
+              </p>
             </div>
-        </div>
-        <div @click="personal" class='main-five-card'>
+          </div>
+        </RouterLink>
+        <RouterLink to='/avaliacao'>
+
+          <div class='main-five-card'>
             <div>
-                <img src='/img/myFotoTwo.jpg' alt='' class='mini-profile'> 
-                <p>Serviços:<br> <i class="fa-solid fa-people-arrows-left-right"></i> presencial <br>+<br><i class="fa-solid fa-camera"></i> Digital </p>
-                
+              <img src='/img/myFotoTwo.jpg' alt='' class='mini-profile'>
+              <p><i class="fa-solid fa-people-arrows-left-right"></i> Serviço presencial</p>
             </div>
             <div>
-                <h4>Avaliação Física + Consultoria online</h4>
-                <h5>R$ 75,00</h5>
-                <p>Serviço de Personal trainer, para treinamento personalizados em academias; </p>
+              <h4>Avaliação Fisica</h4>
+              <h5>R$ 40,00</h5>
+              <p>Avaliação Antropométrica, com percentual de gordura feita com dobras cutâneas ou com balança de
+                bioimpedância;</p>
             </div>
-        </div>
-            <br>
-            <br>
-            
-    </div>  
+          </div>
+        </RouterLink>
+        <RouterLink to='/kravmaga'>
+
+          <div class='main-five-card'>
+            <div>
+              <img src='/img/myFotoTwo.jpg' alt='' class='mini-profile'>
+              <p><i class="fa-solid fa-people-arrows-left-right"></i> Serviço presencial</p>
+
+            </div>
+            <div>
+              <h4>Krav-Maga</h4>
+              <h5>R$ 70,00 hora/aula</h5>
+              <p>Treinamento individual ou em grupo de defesa pessoal, criado por Imi Lichtenfeld; Escola Bukan de
+                Krav-maga;</p>
+            </div>
+          </div>
+          <br>
+        </RouterLink>
+        <br>
+      </div>
+
+      <div class='divider'></div>
     </div>
+    <NavBottomTree />
+  </div>
 </template>
 <script>
 export default {
   head: {
-    title: 'Serviços | Professor Leandro Cesar',
+    title: 'Professor Leandro Cesar',
     htmlAttrs: {
       lang: 'pt-br'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Professor Leandro Cesar Ramos da Costa | Site para Conteúdos e Serviços => Personal Trainer | Consultoria Online e Presencial | Acupuntura | Atendimentos em Niterói e São Gonçalo - RJ' },
-      { hid: 'keywords', name: 'description', content: 'Personal trainer, Acupuntura, Consultoria' },
+      { hid: 'description', name: 'description', content: 'Professor Leandro Cesar Ramos da Costa | Serviços => Personal Trainer | Consultoria Online e Presencial | Niterói - RJ' },
+      { hid: 'keywords', name: 'description', content: 'Professor, Personal trainer, Consultoria' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'msapplication-TileColor', content: '#002937' },
-      { name: 'theme-color', content: '#002937' }
+      { name: 'msapplication-TileColor', content: '#fff' },
+      { name: 'theme-color', content: '#fff' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' },
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/img/favicon.svg' },
       { rel: 'apple-touch-icon', size: '180x180', href: '/img/apple-touch-icon.png' },
-      { rel: 'icon', type:'image/png', size: '32x32', href: '/img/favicon-32x32.png' },
-      { rel: 'icon', type:'image/png', size: '16x16', href: '/img/favicon-16x16.png' },
+      { rel: 'icon', type: 'image/png', size: '32x32', href: '/img/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', size: '16x16', href: '/img/favicon-16x16.png' },
       { rel: 'apple-touch-icon', size: '180x180', href: '/img/apple-touch-icon.png' },
-      { rel: 'mask-icon', href: '/img/safari-pinned-tab.svg', color: '#002937' }
-    ],
-  },
-  data() {
-      return {
-          aplicar : '',
-          aplicarTwo : '',
-          aplicarTree : '',
-          aplicarFour : '',
-          aplicarFive : '',
-          aplicarSix : '',
-          aplicarSeven : '',
-          aplicarEight : true,
-          aplicarEduca : true,
-          aplicarAcupu : '',
-          acontecimentos: `
-        <h4 style="margin-left: 10px;">Personal | Consultoria | Avaliação Física | Krav-maga</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Conlusão do curso de Pós-Graduação Lato-sensu em Acupuntura - Universidade Celso Lisboa - UCL;
-            </li>
-            <li>
-              Finalizando o estágio em Acupuntura na Celso Lisboa - UCL;
-            </li>
-          </ul>
-        <h4 style="margin-left: 10px;">Janeiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Site deepacupuntura.com no ar;
-            </li>
-            <li>
-              Curso de aprimoramento teórico e prático de Acupuntura Escalpiana de Jiao Shunfa; 
-            </li>
-            <li>
-              Início dos trabalhos da Deep Acupuntura na academia BodyClass;
-            </li>
-          </ul>
-          
-          `,
-      }
-  },
-  methods: {
-      doisUm() {
-          this.aplicar = true,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.acontecimentos = `
-        <h4 style="margin-left: 10px;"> Novembro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Início do curso de Pós-Graduação em Cinesiologia, Biomecânica e Treinamento Físico - Universidade 
-              Castelo Branco - UCB;     
-            </li>
-          </ul>
-          <h4 style="margin-left: 10px;"> Julho</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Início do curso de Pós-Graduação em Lesões e Doenças Musculoesqueléticas: Exercício Físico e Reabilitação - Universidade 
-              Castelo Branco - UCB;
-            </li>
-          </ul>
-        <h4 style="margin-left: 10px;"> Fevereiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Reinício do estágio em Acupuntura - Pós Pandemia (COVID-19);
-            </li>
-          </ul>
-          `
-      },
-      umOito(){
-        this.aplicar = false,
-          this.aplicarTwo = true,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,         
-         this.aplicarEight = false,
-          this.acontecimentos = `
-        <h4 style="margin-left: 10px;">Novembro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Início do curso de Pós-Graduação em Acupuntura - Universidade Celso Lisboa - UCB;
-            </li>
-          </ul>
-          `
-      },
-      umSete() {
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = true,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,         
-         this.aplicarEight = false,
-          this.acontecimentos = 
-          `
-          <h4 style="margin-left: 10px;">Março</h4>
-        <ul class="com-bullet com-indent">
-          <li>
-            Início do curso de Formação de Professor de Yoga - Shiva Studio - Rio de Janeiro - RJ;
-          </li>
-          </ul>
-          `
-      },
-      umUm(){
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = true,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,         
-         this.aplicarEight = false,
-          this.acontecimentos =
-          `
-        <h4 style="margin-left: 10px;">Novembro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Término do curso de Formação de Instrutor de Krav-Maga - Bukan School of Krav-maga - Rio de Janeiro - RJ;
-            </li>
-          </ul>
-        <h4 style="margin-left: 10px;">Março</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Início do curso de Formação de Instrutor de Krav-Maga - Bukan School of Krav-maga - Rio de Janeiro - RJ;
-            </li>
-          </ul>
-          `
-      },
-      zeroOito(){
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = true,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,         
-         this.aplicarEight = false,
-          this.acontecimentos =
-          `
-        <h4 style="margin-left: 10px;">Fevereiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Término do curso de Graduação em Educação Física - Universidade Salgado de Oliveita - UNIVERSO;
-            </li>
-          </ul>
-          `
-      },
-      zeroCinco() {
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = true,
-          this.aplicarSeven = false,         
-         this.aplicarEight = false,
-          this.acontecimentos =
-          `
-        <h4 style="margin-left: 10px;">Fevereiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Início do curso de Graduação em Educação Física - Universidade Salgado de Oliveita - UNIVERSO;
-            </li>
-          </ul>
-          `
-      },
-      oitoSeis () {
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = true,         
-         this.aplicarEight = false,
-          this.acontecimentos = 
-          `
-        <h4 style="margin-left: 10px;">Outubro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
-            </li>
-          </ul>
-          `
-      },
-      doisDois () {
-        this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = true,
-          this.acontecimentos = 
-          `
-          <h4 style="margin-left: 10px;">Fevereiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Conlusão do curso de Pós-Graduação Lato-sensu em Acupuntura - Universidade Celso Lisboa - UCL;
-            </li>
-            <li>
-              Finalizando o estágio em Acupuntura na Celso Lisboa - UCL;
-            </li>
-          </ul>
-        <h4 style="margin-left: 10px;">Janeiro</h4>
-          <ul class="com-bullet com-indent">
-            <li>
-              Site deepacupuntura.com no ar;
-            </li>
-            <li>
-              Curso de aprimoramento teórico e prático de Acupuntura Escalpiana de Jiao Shunfa; 
-            </li>
-            <li>
-              Início dos trabalhos da Deep Acupuntura na academia BodyClass;
-            </li>
-          </ul>
-          `
-      },
-      educa () {
-        this.aplicarEduca = true,
-        this.aplicarAcupu = false,
-          this.projetos = 
-          `
-          <h4 style="margin-left: 10px;">Personal | Consultoria</h4>
-        <h5 style="text-align: left; margin:0; color: #ffffff90">Ativo</h5>
-          <ul class="com-bullet com-indent">
-            <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
-            </li>
-          </ul>
-          <br>
-          <h4 style="margin-left: 10px;">EternFlow.com</h4>
-        <h5 style="text-align: left; margin:0; color: #ffffff90">Em desenvolvimento</h5>
-          <ul class="com-bullet com-indent">
-            <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
-            </li>
-          </ul>
-          <br>
-          `
-      },
-      acupu () {
-        this.aplicarAcupu = true,
-        this.aplicarEduca = false,
-          this.projetos = 
-          `
-          <h4 style="margin-left: 10px;">Deep Acupuntura</h4>
-        <h5 style="text-align: left; margin:0; color: #ffffff90">Em Desenvolvimento</h5>
-          <ul class="com-bullet com-indent">
-            <li>
-              Nascimento no dia 08 - Neves - São Gonçalo - RJ;
-            </li>
-          </ul>
-          <br>
-          `
-      }
+      { rel: 'mask-icon', href: '/img/safari-pinned-tab.svg', color: '#fff' }
+    ]
   }
-} 
+}
 </script>
+
 <style scoped>
-  body {
-  background: #fff;
-  font-family: 'Philosopher', sans-serif;
-  color: #aaa;
-  line-height: 1.6;
-}
-
-iframe {
-  margin-left: 10px;
-}
-
-a{
+a {
   text-decoration: none;
-  color: #aaa;
+  color: #555;
 }
 
 i {
-  color: #aaa;
+  color: #888;
   font-size: .9em;
   margin: auto;
 }
 
 code {
-  font-size: 0.6em;
-  margin-left: 15px;
+  font-size: 0.8em;
   padding-left: 10px;
-  border-left: solid 5px #eee;
-  color:#888;
+  border-left: solid 5px #888;
+  color: #bbb;
+  margin-left: 10px;
 }
 
 .divider {
-  height:15px;
-  background-color: #dddddd54;
+  height: 15px;
+  background-color: #fff;
 }
 
-.nav-one{
-  height: 35px;
-  position: sticky;
-  top: -1px;
-}
-
-.nav-one div{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-}
-
-.nav-one a{
-  text-decoration: none;
-  margin: 0 14px 0 6px;
-  font-size: 1.2em;
-}
-
-.nav-one i {
-  color: #0000FF;
-  margin-top: 8px;
-  display: flex;
-  justify-content: flex-end;
+.divider-ultimate {
+  height: 30px;
+  background-color: #fff;
 }
 
 .profile {
+  background: #fff;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding:10px 0 5px 0;
-  color:black;
+  padding: 20px 0 5px 0;
+  margin-top: -10px;
 }
 
 .profile a {
   text-decoration: none;
-  color: #aaa;
+  color: #fff;
   font-size: .9em;
 }
 
@@ -432,92 +210,120 @@ code {
   height: 70px;
   border-radius: 50%;
   margin-left: 10px;
+  margin-right: -20px;
   padding: 0 25px 0 0;
 }
 
 .profile h1 {
-  margin: 5px 0 0 -10px;
+  margin: 5px 0 0 10px;
   font-size: 1.5em;
+  color: #000;
+}
+
+.profile h4:nth-child(2) {
+  margin: 0 0 0 10px;
+  font-size: .9em;
+  font-weight: 100;
+  color: #aaa;
 }
 
 .profile h4 {
   margin: 0 0 0 -10px;
   font-size: .9em;
   font-weight: 100;
-  color: #aaa;
+  color: #555;
 }
 
-.main-one{
+.main-one {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   padding: 10px 0 15px 0;
-  color: black;
+  box-shadow: 0px 10px 5px #bbb;
+  background: #fff;
 }
 
 .main-one div {
   margin: 0 0 0 15px;
 }
 
-.main-one a:nth-child(1) i, .main-one a:nth-child(2) i{
+.main-one a i {
   padding-right: 4px;
   margin: 0 0 0 3px;
 }
 
-.main-one a:nth-child(3) i{
-  padding-right: 2px;
-  margin: 0 0 0 2px;
+.main-one a:nth-child(2) i {
+  padding-right: 0px;
+  margin: 0 0 0 3px;
 }
 
-.main-one a{
+.main-one a {
   margin: 0 0 0 10px;
   color: #555;
 }
 
 .main-two {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: 15px 0 15px 0;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 15px 0 18px 0;
   color: black;
-  box-shadow:  4px 4px 10px #bbb;
+  background: #fff;
+  color: #fff;
+}
+
+.main-two a {
+  margin: 20px 0 0 0px;
+  color: #555;
+  font-weight: 600;
+}
+
+.main-two a:hover {
+  color: #fadb41;
+}
+
+.main-two i {
+  color: #888;
+  font-size: 1.1em;
+  font-weight: 600;
 }
 
 .main-tree {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin: -10px 0 0 0;
+  margin: 0px 0 0 0;
   color: #555;
-  overflow-x:auto;
+  background: #fff;
+  overflow-x: auto;
 }
 
 .main-tree i {
   font-size: 1.2em;
-  color: #555;
+  color: #888;
 }
 
-.main-tree h5{
-  margin-left: 10px;
+.main-tree h5 {
+  margin: 10px 0px 22px 10px;
 }
 
 .main-four {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin: -10px 0 0 0;
+  margin: -15px 0 0 0;
   padding: 0 0 15px 0;
-  color: #fff;  
-  background-color: #002937;  
+  color: #333;
+  background-color: #fff;
   box-shadow: 0px 10px 5px #fadb41;
-  overflow-x:auto;
+  overflow-x: auto;
   display: flex;
   justify-content: flex-start;
   flex-direction: collumn;
 }
 
 .main-four img {
-    height: 70px;
+  height: 70px;
   border-radius: 50%;
   margin-left: 10px;
   padding: 0 25px 0 0;
@@ -525,30 +331,31 @@ code {
 
 .main-four i {
   font-size: 1em;
-  color: #fff;
+  color: #333;
 }
 
-.main-four h4{
+.main-four h4 {
   margin: 10px 0 0 10px;
-  color:#fff;
+  color: #888;
 }
 
-.main-four h5:nth-child(1){
-  margin: 15px auto 5px auto;
-  color: #fff;
+.main-four h5:nth-child(1) {
+  margin: 0px auto 5px auto;
+  color: #333;
 }
-.main-four h5{
+
+.main-four h5 {
   margin: 0px 10px 0px 10px;
-  color: green;
+  color: #888;
 }
 
 .main-four div {
   border-radius: 3% 3% 3% 3%;
 }
 
-.main-four-card  {
+.main-four-card {
   margin: 0px 10px 20px 10px;
-  border: solid .1px #dddddd54;
+  border: solid 1px #dddddd;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -556,34 +363,34 @@ code {
 
 .main-four p {
   padding: 0px;
-  margin: 10px 0 10px 10px ;
+  margin: 10px 0 10px 10px;
   font-size: .8em;
 }
 
 .main-four .mini-profile {
   height: 6em;
-border-radius: 50%;
-margin: 10px 10px 0 10px;
-padding: 0 15px 0 0;
-} 
+  border-radius: 50%;
+  margin: 10px 10px 0 10px;
+  padding: 0 15px 0 0;
+}
 
 .main-five {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   margin: -10px 0 0 0;
-  color: #fff;  
-  background-color: #002937;  
-  box-shadow: 0px 10px 5px #fadb4180;
-  overflow-x:auto;
-  height: 900px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0px 10px 5px #fadb41;
+  overflow-x: auto;
+  height: 500px;
   display: flex;
   justify-content: flex-start;
   flex-direction: collumn;
 }
 
 .main-five img {
-    height: 70px;
+  height: 70px;
   border-radius: 50%;
   margin-left: 10px;
   padding: 0 25px 0 0;
@@ -591,29 +398,31 @@ padding: 0 15px 0 0;
 
 .main-five i {
   font-size: 1em;
-  color: #fff;
+  color: #333;
 }
 
-.main-five h4{
+.main-five h4 {
   margin: 10px 0 0 10px;
-  color:#fff;
+  color: #002937;
 }
 
-.main-five h5:nth-child(1){
+.main-five h5:nth-child(1) {
   margin: 0px auto 5px auto;
-  color: #fff;
+  color: #333;
 }
-.main-five h5{
+
+.main-five h5 {
   margin: 0px 10px 0px 10px;
-  color: #7FFFD4;
+  color: green;
 }
+
 .main-five div {
   border-radius: 3% 3% 3% 3%;
 }
 
-.main-five-card  {
+.main-five-card {
   margin: 0px 10px 20px 10px;
-  border: solid .1px #dddddd54;
+  border: solid 1px #dddddd;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -621,37 +430,33 @@ padding: 0 15px 0 0;
 
 .main-five p {
   padding: 0px;
-  margin: 10px 0 10px 10px ;
+  margin: 10px 0 10px 10px;
   font-size: .8em;
 }
 
 .main-five .mini-profile {
   height: 6em;
-border-radius: 50%;
-margin: 10px 10px 0 10px;
-padding: 0 15px 0 0;
-} 
+  border-radius: 50%;
+  margin: 10px 10px 0 10px;
+  padding: 0 15px 0 0;
+}
 
 .mini-profile {
   height: 25px;
-border-radius: 50%;
-margin: 10px 0 0 0px;
-padding: 0 15px 0 0;
+  border-radius: 50%;
+  margin: 10px 0 0 0px;
+  padding: 0 15px 0 0;
 }
 
 .dateYear {
-    color: #ccc;
-    padding: 0 10px 0 10px;
+  color: #333;
+  padding: 0 10px 0 10px;
 }
 
 .dateYearHover {
-    color: #000;
-    border-bottom: solid .2px #000;
-    padding: 0 10px 0 10px;
+  color: #333;
+  border-bottom: solid .2px #000;
+  padding: 0 10px 0 10px;
 }
 
-@media only screen and (max-width: 369px) {
-
-  }
-
-</style>
+@media only screen and (max-width: 369px) {}</style>  

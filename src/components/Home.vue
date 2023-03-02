@@ -8,7 +8,7 @@ import LCLogoFive from '../components/icons/LCLogoFive.vue'
       <LCLogoFive/>
     
     <span class='logoAnimationSeven'>
-      <h1 class='lightOnAnimationSeven'>professorleandrocesar.com</h1>
+      <h1 class='lightOnAnimationSeven'>personal.leandrocesar.com</h1>
     </span>
     <span class='logoAnimationSevenTwo'>
     <h3>Personal - Consultoria</h3><h3>Avaliação Física - Krav-maga</h3>

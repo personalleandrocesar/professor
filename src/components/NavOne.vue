@@ -2,7 +2,7 @@
     
     <div class='nav-one'>
         <div>
-          <a href="https://app.professorleandrocesar.com" target="_blank"><i class="fa-solid fa-right-to-bracket"></i></a>
+          <a href="https://app.leandrocesar.com" target="_blank"><i class="fa-solid fa-right-to-bracket"></i></a>
         </div>
     </div>
 

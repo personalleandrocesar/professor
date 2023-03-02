@@ -5,7 +5,7 @@
                 <a @click="$router.go(-1)"><i class="fas main-l fa-arrow-left"></i></a>
             </div>
             <div>
-                <a href="https://app.professorleandrocesar.com" target="_blank"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="https://app.leandrocesar.com" target="_blank"><i class="fa-solid fa-right-to-bracket"></i></a>
             </div>
         </div>
     </div>
